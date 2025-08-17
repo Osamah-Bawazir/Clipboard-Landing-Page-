@@ -1,0 +1,396 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+.main-container{
+    padding: 0;
+    margin: 0;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    padding: 8% ;
+}
+header img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+header h1{
+    color: #4c545dff;
+    font-weight:600;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+header p{
+    width: 55%;
+    text-align: center;
+    font-size: 18px;
+    color: #9fabb2ff;
+    margin-top: 0;
+}
+button{
+    height: 40px;
+    border-radius: 20px;
+    width: 170px;
+    color: #9fabb2ff;
+    border: none;
+    margin: 15px 3px 0 ;
+}
+button:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+.for-ios{
+    background-color: #26baa4ff;
+    color: rgb(237, 239, 241);
+    border-bottom: 2px solid #0000000f;
+    box-shadow:   0px 3px 4px 0px rgba(38, 186, 164, 0.4);
+}
+.for-mac{
+    background-color: #6173ffff;
+    color: rgb(237, 239, 241);
+    border-bottom: 2px solid #0000000f;
+    box-shadow:   0px 3px 4px 0px rgba(97, 115, 255, 0.4);
+}
+p{
+    line-height: 30px;
+}
+.track{
+   padding-bottom: 120px;
+}
+h2{
+    color: #4c545dff;
+    font-weight:600;
+    font-size: 30px;
+}
+.track>p, 
+.access-clipboard>p,
+.operating-systems>p{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: #9fabb2ff;
+    margin-top: 0;
+}
+.features-section{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-area: 'img' 'features';
+    gap: 60px;
+    margin-top: 50px;
+   
+
+}
+.features-section img{
+    width: 800px;
+    margin-left: 0px;
+    padding-left: 0;
+    position: relative;
+    right: 80px;
+}
+h4{
+    width: 55%;
+    font-size: 20px;
+    color: #4c545dff;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 60px;
+}
+.features p {
+    width: 63%;
+    color: #9fabb2ff;
+    line-height: 30px;
+}
+.access-clipboard>img{
+    padding: 80px;
+}
+.supercharge-tools{ 
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    margin: 20px;
+}
+.supercharge-tools div{
+    width: 330px;
+    text-align: center;
+}
+.supercharge-tools h4{
+    width: 100%;
+    color: #4c545dff;
+}
+.supercharge-tools p{
+    color: #9fabb2ff;
+}
+.companies {
+    flex-direction: row;
+    gap: 110px;
+    margin: 100px 0;
+}
+.operating-systems{
+    margin: 0 0 100px 0;
+}
+/* Footer */
+footer{
+    background-color: rgba(159, 171, 178, 0.10);
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer>img{
+    width: 60px;
+}
+footer .links{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+footer  a{
+    font-size: 20px;
+    text-decoration: none;
+    color:#4c545dff;
+    font-weight: 500;
+
+}
+footer a:hover{
+    color:#26baa4ff;
+}
+footer .social-contact img{
+    margin-right: 10px;
+}
+footer .social-contact img:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(56%) sepia(97%) 
+    saturate(747%) hue-rotate(127deg) brightness(98%);
+}
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 10px;
+        background-image: url(../images/bg-header-mobile.png);
+        background-size: 100%;
+    }
+    header h1 {
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 16px;
+    }
+    .track {
+        padding: 0 20px;
+    }
+    .track h2,
+    .operating-systems h2{
+        text-align: center;
+    }
+    header p,
+    .track>p,
+    .access-clipboard>p,
+    .operating-systems>p {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .features-section {
+        display: block;
+        margin-top: 30px;
+    }
+    .features-section img {
+        width: 100%;
+        position: static;
+        right: 0;
+        margin-bottom: 30px;
+    }
+    .features {
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    .features h4 {
+        width: 100%;
+        padding-right: 0;
+    }
+    .features div {
+        margin-left: 0;
+        text-align: center;
+    }
+    .features p {
+        width: 100%;
+        padding-right: 0;
+    }
+    .supercharge-tools {
+        flex-direction: column;
+        gap: 30px;
+        margin: 10px 0;
+    }
+    .supercharge-tools div {
+        width: 100%;
+        padding: 10px;
+    }
+    .companies {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px 0;
+    }
+    .access-clipboard>img {
+        padding: 20px;
+        width: 100%;
+    }
+    .operating-systems {
+        margin: 0 0 40px 0;
+        padding: 10px;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    footer .links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    footer .social-contact img {
+        margin-right: 0;
+        margin: 0 8px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Tablet/iPad styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 60px 40px;
+        background-image: url(../images/bg-header-desktop.png);
+    }
+    header h1 {
+        font-size: 34px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        font-size: 18px;
+    }
+    .track {
+        padding: 0 40px 80px 40px;
+    }
+    .track h2,
+    .operating-systems h2{
+        text-align: center;
+    }
+    header p,
+    .track>p,
+    .access-clipboard>p,
+    .operating-systems>p {
+        width: 80%;
+        font-size: 17px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .track h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+    .features-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .features-section img {
+        width: 90%;
+        position: static;
+        right: 0;
+        margin-bottom: 0;
+    }
+    .features {
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .features h4 {
+        width: 100%;
+        padding-right: 0;
+        font-size: 22px;
+    }
+    .features div {
+        margin-left: 0;
+        text-align: left;
+    }
+    .features p {
+        width: 100%;
+        padding-right: 0;
+        font-size: 17px;
+    }
+    .supercharge-tools {
+        flex-direction: row;
+        gap: 30px;
+        margin: 20px 0;
+    }
+    .supercharge-tools div {
+        width: 90%;
+        padding: 20px;
+    }
+    .companies {
+        flex-direction: row;
+        gap: 60px;
+        margin: 60px 0;
+    }
+    .access-clipboard>img {
+        padding: 40px;
+        width: 90%;
+    }
+    .operating-systems {
+        margin: 0 0 60px 0;
+        padding: 20px;
+    }
+    footer {
+        flex-direction: row;
+        height: auto;
+        gap: 40px;
+        padding: 30px 0;
+        text-align: center;
+        align-items: center;
+    }
+    footer .links {
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+    footer .social-contact img {
+        margin-right: 10px;
+        width: 28px;
+        height: 28px;
+    }
+}
